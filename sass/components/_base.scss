@@ -34,9 +34,10 @@ img {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+ 
 }
 
 .link {
@@ -51,9 +52,9 @@ img {
   font-style: normal;
 }
 
-.section {
-  padding: 94px 0;
-}
+// .section {
+//   padding: 94px 0;
+// }
 
 .main-title {
   margin-bottom: 50px;
