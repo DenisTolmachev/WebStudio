@@ -29,15 +29,23 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .container {
-  max-width: 480px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 15px;
- 
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .link {
@@ -52,9 +60,10 @@ img {
   font-style: normal;
 }
 
-// .section {
-//   padding: 94px 0;
-// }
+ .section {
+   padding-top: 60px;
+	padding-bottom: 60px;
+ }
 
 .main-title {
   margin-bottom: 50px;
@@ -76,7 +85,6 @@ img {
   color: $third-text-color;
 }
 
-
 .visually-hidden {
   position: absolute;
   @include size(1px, 1px);
@@ -88,4 +96,3 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-

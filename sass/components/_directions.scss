@@ -1,5 +1,7 @@
 .directions {
-	padding-top: 47px;
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
 }
 
 .directions-list {
