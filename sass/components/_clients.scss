@@ -1,19 +1,28 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+.clients-list__item {
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-basis: calc((100% - 60px) / 2);
+}
+
+.clients-list__item:nth-child(-n + 4) {
+  margin-bottom: 30px;
 }
 
 .clients-list__link {
   @extend %flex-center;
-  @include size(170px, 92px);
+  @include size(100%, 92px);
   border: 1px solid $secondary-brand-color;
   border-radius: 4px;
   color: $secondary-brand-color;
   transition-property: color, border;
- @include main-animation();
+  @include main-animation();
   &:hover,
   &:focus {
     border: 1px solid $main-brand-color;

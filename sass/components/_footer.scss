@@ -4,16 +4,15 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+text-align: center;
 }
 
-.footer__address {
-  margin-right: 70px;
+.footer__social {
+	margin-top: 60px;
 }
 
 .footer__subscription {
-  margin-left: auto;
+  margin-top: 60px;
 }
 
 .footer__title {
