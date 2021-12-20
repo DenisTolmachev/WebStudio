@@ -1,18 +1,26 @@
 .nav {
-  margin-left: 93px;
+  margin-bottom: 302px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .nav__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link {
   display: block;
-  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -23,6 +31,11 @@
   &:hover,
   &:focus {
     color: $main-brand-color;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -37,5 +50,10 @@
     bottom: -1px;
     background-color: $main-brand-color;
     border-radius: 2px;
+  }
+  @media screen and (max-width: 767px) {
+    &::after {
+      display: none;
+    }
   }
 }
