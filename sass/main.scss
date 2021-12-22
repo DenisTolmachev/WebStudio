@@ -5,7 +5,10 @@
 @import "./components/buttons";
 @import "./utils/placeholders";
 
+@import "./components/filter";
+
 @import "./components/header";
+@import "./components/header-burger";
 @import "./components/logo";
 @import "./components/nav";
 @import "./components/mobile-menu";
@@ -21,6 +24,16 @@
 @import "./components/footer";
 @import "./components/address";
 @import "./components/subscription";
+
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/input-field";
+@import "./components/textarea-field";
+@import "./components/checkbox-field";
+
+@import "./components/filter";
+@import "./components/projects";
+
 
 
 

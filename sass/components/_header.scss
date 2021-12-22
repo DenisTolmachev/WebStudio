@@ -8,19 +8,10 @@
   position: relative;
 }
 
-.header__menu {
-	display: none;
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
 }
 
-.header__burger {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	@include size(40px, 40px);
-	margin-left: auto;
-	color: $main-brand-color;
-	cursor: pointer;
-	&:hover {
-		fill: currentColor;
-	}
-}

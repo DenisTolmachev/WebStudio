@@ -1,8 +1,18 @@
 .mobile-menu {
-	position: absolute;
+	display: flex;
+    flex-direction: column;
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
+	height: 100vh;
 	padding: 48px 40px;
 	background-color: $secondary-page-color;
+	transform: translateX(100%);
+	transition-property: transform;
+  @include main-animation();
+}
+
+.mobile-menu.is-open {
+	transform: translateX(0);
 }

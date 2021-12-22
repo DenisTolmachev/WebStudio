@@ -1,0 +1,19 @@
+.header__burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include size(40px, 40px);
+  margin-left: auto;
+  background-color: transparent;
+  color: $main-brand-color;
+  cursor: pointer;
+  &:hover {
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .header__burger {
+    display: none;
+  }
+}

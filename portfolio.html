@@ -60,13 +60,13 @@
             </li>
           </ul>
         </div>
-        <div class="header__burger">
+        <button class="header__burger menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="24" height="16">
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
-        </div>
-		  <div class="mobile-menu">
-          <button class="close-button close-button--mobile">
+        </button>
+        <div class="mobile-menu js-menu-container">
+          <button class="menu-toggle js-close-menu close-button close-button--mobile">
             <svg width="19" height="19" class="close-button__icon">
               <use href="./images/icons.svg#icon-close-mobile"></use>
             </svg>
@@ -407,5 +407,12 @@
         </div>
       </div>
     </footer>
+	 <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
