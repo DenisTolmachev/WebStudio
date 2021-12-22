@@ -1,18 +1,22 @@
 .mobile-menu {
-	display: flex;
-    flex-direction: column;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	padding: 48px 40px;
-	background-color: $secondary-page-color;
-	transform: translateX(100%);
-	transition-property: transform;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $secondary-page-color;
+  transform: translateX(100%);
+  transition-property: transform;
   @include main-animation();
+  @media screen and (min-width: 360px) {
+    padding: 40px 20px;
+  }
 }
 
 .mobile-menu.is-open {
-	transform: translateX(0);
+  transform: translateX(0);
 }
