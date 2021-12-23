@@ -4,15 +4,32 @@
 }
 
 .footer__container {
-text-align: center;
+  text-align: center;
+  @media screen and (min-width: 760px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__address {
+	@media screen and (min-width: 760px) {
+    width: 50%;
+  }
 }
 
 .footer__social {
-	margin-top: 60px;
+  margin-top: 60px;
+  @media screen and (min-width: 760px) {
+	 width: 50%;
+	 margin-top: 5px;
+  }
 }
 
 .footer__subscription {
   margin-top: 60px;
+   @media screen and (min-width: 760px) {
+	 width: 100%;
+  }
 }
 
 .footer__title {
