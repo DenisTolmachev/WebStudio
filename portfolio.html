@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
-	 <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -60,7 +60,11 @@
             </li>
           </ul>
         </div>
-        <button class="header__burger menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="header__burger menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="24" height="16">
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
@@ -74,7 +78,7 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a class="nav__link link " href="./index.html">Студия</a>
+                <a class="nav__link link" href="./index.html">Студия</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link link nav__link--current" href="./portfolio.html">Портфолио</a>
@@ -148,13 +152,35 @@
           <ul class="projects-list list">
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-1-mobile@1x.jpg"
-                  alt="Проект 1"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-1-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-1-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-1-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-1-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-1-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-1-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Технокряк это современная площадка распространения коронавируса. Компании
@@ -170,12 +196,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-2-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-2-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-2-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-2-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-2-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-2-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-2-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-2-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -187,12 +236,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-3-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-3-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-3-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-3-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-3-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-3-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-3-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-3-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, obcaecati!
@@ -206,12 +278,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-4-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-4-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-4-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-4-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-4-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-4-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-4-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-4-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ducimus vel,
@@ -226,12 +321,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-5-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-5-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-5-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-5-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-5-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-5-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-5-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-5-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia inventore illum
@@ -246,12 +364,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-6-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-6-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-6-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-6-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-6-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-6-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-6-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-6-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis
@@ -267,12 +408,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-7-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-7-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-7-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-7-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-7-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-7-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-7-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-7-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusantium
@@ -288,12 +452,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-8-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-8-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-8-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-8-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-8-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-8-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-8-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-8-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste soluta
@@ -309,12 +496,35 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__thumbs">
-                <img
-                  class="projects-list__image"
-                  src="./images/mobile/portfolio-9-mobile@1x.jpg"
-                  alt="Проект 2"
-                  width="370"
-                />
+					  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfolio-9-desktop@1x.jpg 1x
+                      ./images/desktop/portfolio-9-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfolio-9-tablet@1x.jpg 1x,
+                      ./images/tablet/portfolio-9-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfolio-9-mobile@1x.jpg 1x,
+                      ./images/mobile/portfolio-9-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="projects-list__image"
+                    src="./images/mobile/portfolio-9-mobile@1x.jpg"
+                    alt="Проект 1"
+                    width="370"
+                  />
+                </picture>
                 <div class="projects-list__overlay">
                   <p class="projects-list__overlay-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente soluta nihil
@@ -331,7 +541,7 @@
         </div>
       </section>
     </main>
-     <footer class="footer" id="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__container">
         <div class="footer__address">
           <a class="logo logo--secondary-color link" href="./index.html">
@@ -349,12 +559,17 @@
                 </a>
               </li>
               <li class="address__item">
-                <a class="contacts-list__link contacts-list__link--secondary link" href="mailto:info@devstudio.com">
+                <a
+                  class="contacts-list__link contacts-list__link--secondary link"
+                  href="mailto:info@devstudio.com"
+                >
                   info@devstudio.com
                 </a>
               </li>
               <li class="address__item">
-                <a class="contacts-list__link contacts-list__link--secondary link" href="tel:+380961111111"
+                <a
+                  class="contacts-list__link contacts-list__link--secondary link"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -397,7 +612,13 @@
         <div class="footer__subscription">
           <h2 class="footer__title">Подпишитесь на рассылку</h2>
           <form class="subscribe-form" action="#">
-            <input type="email" name="footer-email" class="subscribe-form__input" placeholder="E-mail" required />
+            <input
+              type="email"
+              name="footer-email"
+              class="subscribe-form__input"
+              placeholder="E-mail"
+              required
+            />
             <button type="submit" class="primary-button primary-button--flex">
               Подписаться
               <svg width="24" height="24" class="primary-button__icon">
@@ -408,7 +629,7 @@
         </div>
       </div>
     </footer>
-	 <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
