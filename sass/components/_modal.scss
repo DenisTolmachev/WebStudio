@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  width: 528px;
+  min-width: 450px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -10,14 +10,8 @@
   border-radius: 4px;
   transition-property: transform;
   @include main-animation();
-  padding: 40px 20px;
-  @media screen and (min-width: 360px) {
-    width: 360px;
-  }
-  @media screen and (min-width: 767px) {
-    width: 450px;
-    padding: 40px;
-  }
+  padding: 40px 40px;
+
   @media screen and (min-width: 1200px) {
     width: 528px;
   }

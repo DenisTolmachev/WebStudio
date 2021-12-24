@@ -4,13 +4,10 @@
 
 .checkbox-field__text {
   @extend %flex-center;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $third-text-color;
-  @media screen and (min-width: 480px) {
-    font-size: 12px;
-  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
