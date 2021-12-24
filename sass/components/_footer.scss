@@ -9,26 +9,45 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    text-align: start;
+  }
 }
 
 .footer__address {
-	@media screen and (min-width: 760px) {
+  @media screen and (min-width: 760px) {
     width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
   }
 }
 
 .footer__social {
   margin-top: 60px;
   @media screen and (min-width: 760px) {
-	 width: 50%;
-	 margin-top: 5px;
+    width: 50%;
+    margin-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin-top: 0;
+	 margin-left: 70px;
   }
 }
 
 .footer__subscription {
   margin-top: 60px;
-   @media screen and (min-width: 760px) {
-	 width: 100%;
+  @media screen and (min-width: 760px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin-top: 0;
+    margin-left: auto;
   }
 }
 
