@@ -1,20 +1,24 @@
 .header {
   border-bottom: 1px solid $secondary-border-color;
+  padding: 10px 0;
+  @media screen and (min-width: 767px) {
+    padding: 0;
+  }
 }
 
-.header__content {
+.header__conteiner {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.header__menu {
-	width: inherit;
+.header__content {
+  width: inherit;
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .header__menu {
+  .header__content {
     display: none;
   }
 }

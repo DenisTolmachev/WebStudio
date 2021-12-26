@@ -1,6 +1,5 @@
 .hero {
   padding: 118px 0;
-  max-width: 480px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/mobile/hero-bg-mobile@1x.jpg);
@@ -18,7 +17,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/tablet/hero-bg-tablet@1x.jpg);
   }

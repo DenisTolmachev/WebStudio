@@ -6,14 +6,15 @@
 
 .directions-list {
   display: flex;
+  margin: -15px;
 }
 
 .directions-list__thumb {
   position: relative;
 }
 
-.directions-list__item:not(:last-child) {
-  margin-right: 30px;
+.directions-list__item {
+margin: 15px;
 }
 
 .directions-list__explain {

@@ -7,7 +7,7 @@
   }
 }
 
-.features-list__item:nth-child(-n + 3) {
+.features-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
