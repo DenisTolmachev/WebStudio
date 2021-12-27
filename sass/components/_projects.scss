@@ -1,13 +1,13 @@
 .projects-list {
-  margin-top: 40px;
+  margin: 25px -15px -15px -15px;
   @media screen and (min-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin: 30px -15px -15px -15px;
+    margin: 15px -15px -15px -15px;
   }
-  @media screen and (min-width: 1200px) {
-    margin: 50px -15px -15px -15px;
+  @media screen and (min-width: $desktop) {
+    margin: 35px -15px -15px -15px;
   }
 }
 
@@ -28,7 +28,7 @@
   @media screen and (min-width: 767px) {
     flex-basis: calc((100% - 60px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 90px) / 3);
   }
 }
@@ -43,7 +43,7 @@
   position: absolute;
   top: 0;
   @include size(100%, 100%);
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: rgba($main-brand-color, 0.9);
   padding: 0 24px;
   align-items: center;
   transition-property: transform, opasity;

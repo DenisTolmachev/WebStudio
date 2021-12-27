@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   @include size(100%, 100%);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba($logo-secondary-color, 0.2);
   opacity: 1;
   transition-property: opacity visibility;
   @include main-animation();

@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
@@ -21,7 +21,7 @@
   @media screen and (min-width: 760px) {
     width: 50%;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: auto;
   }
 }
@@ -32,10 +32,10 @@
     width: 50%;
     margin-top: 5px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: auto;
     margin-top: 0;
-	 margin-left: 70px;
+    margin-left: 70px;
   }
 }
 
@@ -44,7 +44,7 @@
   @media screen and (min-width: 760px) {
     width: 100%;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: auto;
     margin-top: 0;
     margin-left: auto;

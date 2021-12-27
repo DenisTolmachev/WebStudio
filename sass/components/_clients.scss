@@ -10,7 +10,7 @@
   @media screen and (min-width: 767px) {
     flex-basis: calc((100% - 90px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 180px) / 6);
   }
 }

@@ -1,8 +1,7 @@
 .hero {
   padding: 118px 0;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/mobile/hero-bg-mobile@1x.jpg);
+  @include bg-img('../images/mobile/hero-bg-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,35 +9,30 @@
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/mobile/hero-bg-mobile@2x.jpg);
+    @include bg-img('../images/mobile/hero-bg-mobile@2x.jpg');
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/tablet/hero-bg-tablet@1x.jpg);
+    @include bg-img('../images/tablet/hero-bg-tablet@1x.jpg');
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/tablet/hero-bg-tablet@2x.jpg);
+      @include bg-img('../images/tablet/hero-bg-tablet@2x.jpg');
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .hero {
     max-width: 1600px;
-	 padding: 200px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/desktop/hero-bg-desktop@1x.jpg);
+    padding: 200px 0;
+    @include bg-img('../images/desktop/hero-bg-desktop@1x.jpg');
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/desktop/hero-bg-desktop@2x.jpg);
+      @include bg-img('../images/desktop/hero-bg-desktop@2x.jpg');
     }
   }
 }

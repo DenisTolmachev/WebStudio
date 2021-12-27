@@ -1,41 +1,34 @@
-@import "./utils/variables";
-@import "./utils/mixins";
+@import './utils/variables';
+@import './utils/mixins';
 
-@import "./components/base";
-@import "./components/buttons";
-@import "./utils/placeholders";
+@import './components/base';
+@import './components/buttons';
+@import './utils/placeholders';
 
-@import "./components/filter";
+@import './components/filter';
 
-@import "./components/header";
-@import "./components/header-burger";
-@import "./components/logo";
-@import "./components/nav";
-@import "./components/mobile-menu";
-@import "./components/mobile-menu-social";
-@import "./components/contacts";
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/mobile-menu';
+@import './components/social-text-links';
+@import './components/contacts';
 
-@import "./components/hero";
-@import "./components/features";
-@import "./components/directions";
-@import "./components/team";
-@import "./components/social";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/address";
-@import "./components/subscription";
+@import './components/hero';
+@import './components/features';
+@import './components/directions';
+@import './components/team';
+@import './components/social';
+@import './components/clients';
+@import './components/footer';
+@import './components/address';
+@import './components/subscription';
 
-@import "./components/backdrop";
-@import "./components/modal";
-@import "./components/input-field";
-@import "./components/textarea-field";
-@import "./components/checkbox-field";
+@import './components/backdrop';
+@import './components/modal';
+@import './components/input-field';
+@import './components/textarea-field';
+@import './components/checkbox-field';
 
-@import "./components/filter";
-@import "./components/projects";
-
-
-
-
-
-
+@import './components/filter';
+@import './components/projects';

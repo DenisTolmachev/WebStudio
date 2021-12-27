@@ -1,9 +1,9 @@
 .contacts-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-direction: row;
   }
 }
@@ -13,24 +13,22 @@
   margin-bottom: 64px;
 }
 
-.contacts-list--header {
+.header__contacts {
   margin-left: auto;
 }
 
 .contacts-list__item:not(:last-child) {
   margin-bottom: 32px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
     margin-right: 50px;
   }
 }
 
 .contacts-list__link {
-  display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -42,22 +40,29 @@
   &:focus {
     color: $main-brand-color;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: 1.17;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.1;
   }
 }
 
-.contacts-list__link--large-size {
-  font-size: 34px;
-  color: $main-brand-color;
+.contacts-list__link--center {
+  display: flex;
+  align-items: center;
 }
 
-.contacts-list__link--acent-color {
+.contacts-list__link--large-size {
+  font-size: 34px;
+  @media screen and (max-width: 479px) {
+    font-size: 27px;
+  }
+}
+
+.contacts-list__link--accent-color {
   color: $main-brand-color;
 }
 
@@ -78,14 +83,14 @@
 }
 
 .contacts-list__icon--envelope {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 14px;
     height: 10px;
   }
 }
 
 .contacts-list__icon--smartphone {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 10px;
     height: 14px;
   }

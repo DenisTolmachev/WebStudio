@@ -50,13 +50,33 @@
   }
 }
 
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include size(40px, 40px);
+  margin-left: auto;
+  background-color: transparent;
+  color: $main-brand-color;
+  cursor: pointer;
+  &:hover {
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .burger {
+    display: none;
+  }
+}
+
 .close-button {
   position: absolute;
   @include size(30px, 30px);
   right: 8px;
   top: 8px;
   background: $secondary-page-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba($logo-secondary-color, 0.1);
   border-radius: 50%;
   cursor: pointer;
   color: $main-brand-color;
@@ -67,7 +87,7 @@
   }
 }
 
-.close-button--mobile {
+.close-button-secondary {
   border: 0px;
   @include size(40px, 40px);
   right: 15px;
