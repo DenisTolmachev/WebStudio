@@ -1,5 +1,5 @@
 .projects-list {
-  margin: 25px -15px -15px -15px;
+  margin-top: 40px;
   @media screen and (min-width: 767px) {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  margin: 15px;
+//   margin: 15px;
   transition-property: box-shadow;
   @include main-animation();
   &:hover {
@@ -26,10 +26,18 @@
     transform: translateY(0);
   }
   @media screen and (min-width: 767px) {
+	  margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+.projects-list__item:not(:last-child) {
+	margin-bottom: 30px;
+	@media screen and (min-width: 767px) {
+    margin-bottom: 15px;
   }
 }
 
