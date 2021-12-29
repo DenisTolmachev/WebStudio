@@ -9,11 +9,14 @@
 }
 
 @mixin bg-img($url, $withGrad: true) {
-	@if $withGrad {
-		 background-image: linear-gradient(to right, rgba($main-background-color, 0.4), rgba(47, 48, 58, 0.4)),
+  @if $withGrad {
+    background-image: linear-gradient(
+        to right,
+        rgba($main-background-color, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
       url($url);
-	}
-	@else {
-		background-image: url($url);
-	}
+  } @else {
+    background-image: url($url);
+  }
 }
